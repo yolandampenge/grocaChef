@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GrocaAIChef — Smart Shopping, Smarter Meals</title>
+  <meta name="description" content="GrocaAIChef is a collaborative AI-powered shopping list app. Plan meals, scan barcodes, share lists, and shop smarter — online or offline." />
+  <link rel="icon" href="favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── NAV ────────────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">🛒</span>
+        <span>GrocaAIChef</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#support">Support</a></li>
+        <li><a href="policy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+      </ul>
+      <a href="#download" class="btn btn-primary nav-cta">Get the App</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#support">Support</a>
+      <a href="policy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="#download" class="btn btn-primary">Get the App</a>
+    </div>
+  </nav>
+
+  <!-- ── HERO ───────────────────────────────────────────── -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-content animate-in">
+      <div class="hero-badge">
+        <span>✨</span> AI-Powered Grocery Planning
+      </div>
+      <h1>Shop Smarter.<br/>Cook Better.<br/><span class="gradient-text">Live Easier.</span></h1>
+      <p class="hero-sub">GrocaAIChef is your all-in-one collaborative shopping companion — with AI meal planning, barcode scanning, offline support, and real-time list sharing.</p>
+      <div class="hero-actions">
+        <a href="#download" class="btn btn-primary btn-lg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.7 9.05 7.4c1.39.07 2.34.74 3.15.8 1.19-.24 2.35-.93 3.62-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.39-1.32 2.76-2.65 3.99zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+          App Store
+        </a>
+        <a href="#download" class="btn btn-outline btn-lg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.33.18.7.19 1.06.03l12.16-6.93-2.59-2.61-10.63 9.51zm16.44-10.44L17.1 11.7 14.29 14.5l2.45 2.47 2.88-1.64c.82-.47.82-1.64 0-2.11zM3.03.28C2.67.47 2.44.85 2.44 1.33v21.34c0 .48.23.86.59 1.05l.07.04 11.94-11.97v-.28L3.1.24l-.07.04zm10.02 13.47L3.03 3.78v-.01l10.02 10.0-.01-.02z"/></svg>
+          Google Play
+        </a>
+      </div>
+      <p class="hero-note">Free to download · Premium features available</p>
+    </div>
+    <div class="hero-visual animate-in delay-200">
+      <div class="phone-mockup">
+        <div class="phone-screen">
+          <div class="mock-header">
+            <div class="mock-title">My Lists</div>
+            <div class="mock-subtitle">Hi, Yolanda!</div>
+          </div>
+          <div class="mock-card mock-card-1">
+            <div class="mock-dot" style="background:#7C3AED"></div>
+            <div>
+              <div class="mock-list-name">January List</div>
+              <div class="mock-list-meta">Monthly · 14 items</div>
+            </div>
+            <div class="mock-progress">8/14</div>
+          </div>
+          <div class="mock-card mock-card-2">
+            <div class="mock-dot" style="background:#059669"></div>
+            <div>
+              <div class="mock-list-name">Household</div>
+              <div class="mock-list-meta">Utility · 6 items</div>
+            </div>
+            <div class="mock-progress">6/6</div>
+          </div>
+          <div class="mock-card mock-card-3">
+            <div class="mock-dot" style="background:#DC2626"></div>
+            <div>
+              <div class="mock-list-name">Braai Supplies</div>
+              <div class="mock-list-meta">Utility · 9 items</div>
+            </div>
+            <div class="mock-progress">3/9</div>
+          </div>
+          <div class="mock-fab">🍳 Create Meals</div>
+        </div>
+        <div class="phone-notch"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FEATURES ───────────────────────────────────────── -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header animate-fade">
+        <div class="section-badge">Features</div>
+        <h2>Everything you need to<br/>shop and cook smarter</h2>
+        <p>From collaborative lists to AI meal planning — GrocaAIChef has it all in one place.</p>
+      </div>
+      <div class="features-grid">
+
+        <div class="feature-card animate-fade delay-100">
+          <div class="feature-icon" style="background: linear-gradient(135deg,#7C3AED22,#7C3AED44)">
+            <span>🤖</span>
+          </div>
+          <h3>AI Meal Planning</h3>
+          <p>Your AI chef looks at what's in your fridge, your cupboard, and your shopping list — then builds you a full meal plan on the spot. No guessing, no waste, no "what's for dinner?" ever again.</p>
+          <p class="feature-tip">💡 <strong>Pro tip:</strong> Keep your lists up to date — add items as you stock up and check them off as you run out. The more your AI knows about your kitchen, the smarter your meal plans get.</p>
+          <span class="feature-tag premium">Premium</span>
+        </div>
+
+        <div class="feature-card animate-fade delay-200">
+          <div class="feature-icon" style="background: linear-gradient(135deg,#059669 22,#05966944)">
+            <span>👨‍👩‍👧</span>
+          </div>
+          <h3>Shared Lists</h3>
+          <p>Invite family or housemates to a list. Everyone sees updates in real time — no more double-buying or missed items.</p>
+        </div>
+
+        <div class="feature-card animate-fade delay-300">
+          <div class="feature-icon" style="background: linear-gradient(135deg,#DC262622,#DC262644)">
+            <span>📷</span>
+          </div>
+          <h3>Barcode Scanner</h3>
+          <p>Scan product barcodes to add items instantly or mark them as scanned out when you take them from your pantry.</p>
+          <span class="feature-tag premium">Premium</span>
+        </div>
+
+        <div class="feature-card animate-fade delay-100">
+          <div class="feature-icon" style="background: linear-gradient(135deg,#D9770622,#D9770644)">
+            <span>📅</span>
+          </div>
+          <h3>Monthly Lists</h3>
+          <p>Organise groceries by month. Items flagged "move to next month" automatically carry over — keeping your recurring essentials on track.</p>
+        </div>
+
+        <div class="feature-card animate-fade delay-200">
+          <div class="feature-icon" style="background: linear-gradient(135deg,#0284C722,#0284C744)">
+            <span>📶</span>
+          </div>
+          <h3>Works Offline</h3>
+          <p>Check off items even without internet. Changes sync automatically when you reconnect — powered by PowerSync technology.</p>
+        </div>
+
+        <div class="feature-card animate-fade delay-300">
+          <div class="feature-icon" style="background: linear-gradient(135deg,#71717A22,#71717A44)">
+            <span>🏷️</span>
+          </div>
+          <h3>Smart Categories</h3>
+          <p>Organise items into custom aisles with colours and icons. Drag and drop items between categories while you shop.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HOW IT WORKS ───────────────────────────────────── -->
+  <section class="section section-alt" id="how-it-works">
+    <div class="container">
+      <div class="section-header animate-fade">
+        <div class="section-badge">How It Works</div>
+        <h2>Up and running in minutes</h2>
+        <p>Three simple steps to a smarter shopping experience.</p>
+      </div>
+      <div class="steps">
+        <div class="step animate-fade delay-100">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Create Your Account</h3>
+            <p>Sign up for free in seconds. Set your display name and you're ready to go.</p>
+          </div>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step animate-fade delay-200">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Build Your Lists</h3>
+            <p>Create monthly or utility lists, add categories, and start adding items. Invite family to share in real time.</p>
+          </div>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step animate-fade delay-300">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>Shop, Cook & Let AI Do the Rest</h3>
+            <p>Check off items as you shop — online or offline. Tell your AI what's in your fridge, cupboard, and list, and it generates a full meal plan instantly. Add items as you stock up, check them off as you run out, and your AI gets smarter with every shop.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PRICING ────────────────────────────────────────── -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section-header animate-fade">
+        <div class="section-badge">Pricing</div>
+        <h2>Simple, honest pricing</h2>
+        <p>Start free. Upgrade when you're ready for more power.</p>
+      </div>
+      <div class="pricing-grid">
+
+        <div class="pricing-card animate-fade delay-100">
+          <div class="pricing-label">Free</div>
+          <div class="pricing-price">R0<span>/month</span></div>
+          <p class="pricing-desc">Perfect for individuals getting organised.</p>
+          <ul class="pricing-list">
+            <li>✅ 1 shopping list</li>
+            <li>✅ Unlimited items</li>
+            <li>✅ Custom categories</li>
+            <li>✅ Offline check/uncheck</li>
+            <li>✅ Archive lists</li>
+            <li>❌ AI meal planning</li>
+            <li>❌ Barcode scanner</li>
+            <li>❌ Shared lists</li>
+          </ul>
+          <a href="#download" class="btn btn-outline btn-full">Get Started Free</a>
+        </div>
+
+        <div class="pricing-card pricing-featured animate-fade delay-200">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-label">Premium</div>
+          <div class="pricing-price">R49<span>/month</span></div>
+          <p class="pricing-desc">Everything you need for the whole household.</p>
+          <ul class="pricing-list">
+            <li>✅ Unlimited lists</li>
+            <li>✅ Unlimited items</li>
+            <li>✅ Custom categories</li>
+            <li>✅ Offline check/uncheck</li>
+            <li>✅ Archive & export lists</li>
+            <li>✅ AI meal planning</li>
+            <li>✅ Barcode scanner</li>
+            <li>✅ Real-time shared lists</li>
+          </ul>
+          <a href="#download" class="btn btn-primary btn-full">Start Premium</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SUPPORT ────────────────────────────────────────── -->
+  <section class="section section-alt" id="support">
+    <div class="container">
+      <div class="section-header animate-fade">
+        <div class="section-badge">Support</div>
+        <h2>We're here to help</h2>
+        <p>Got a question or running into an issue? Reach out and we'll get back to you as soon as possible.</p>
+      </div>
+      <div class="support-grid">
+        <div class="support-card animate-fade delay-100">
+          <div class="support-icon">📧</div>
+          <h3>Email Support</h3>
+          <p>Send us a message and we'll respond within 24 hours.</p>
+          <a href="mailto:admin@grocaaichef.com" class="btn btn-outline">admin@grocaaichef.com</a>
+        </div>
+        <div class="support-card animate-fade delay-200">
+          <div class="support-icon">📱</div>
+          <h3>In-App Support</h3>
+          <p>Open the drawer menu inside the app and tap <strong>Contact Support</strong> to send a message directly.</p>
+        </div>
+        <div class="support-card animate-fade delay-300">
+          <div class="support-icon">📄</div>
+          <h3>Privacy & Legal</h3>
+          <p>Read our privacy policy to understand how we handle your data.</p>
+          <a href="policy.html" class="btn btn-outline">View Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── DOWNLOAD ───────────────────────────────────────── -->
+  <section class="section download-section" id="download">
+    <div class="container">
+      <div class="download-inner animate-fade">
+        <div class="orb orb-dl-1"></div>
+        <div class="orb orb-dl-2"></div>
+        <h2>Ready to shop smarter?</h2>
+        <p>Download GrocaAIChef free today — available on iOS and Android.</p>
+        <div class="hero-actions">
+          <!-- TODO: replace href with your App Store link once live -->
+          <!-- e.g. https://apps.apple.com/app/idXXXXXXXXX -->
+          <a href="#coming-soon" class="btn btn-white btn-lg store-btn" data-store="App Store">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.7 9.05 7.4c1.39.07 2.34.74 3.15.8 1.19-.24 2.35-.93 3.62-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.39-1.32 2.76-2.65 3.99zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+            App Store
+          </a>
+          <!-- TODO: replace href with your Google Play link once live -->
+          <!-- e.g. https://play.google.com/store/apps/details?id=com.yourpackage -->
+          <a href="#coming-soon" class="btn btn-white-outline btn-lg store-btn" data-store="Google Play">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.33.18.7.19 1.06.03l12.16-6.93-2.59-2.61-10.63 9.51zm16.44-10.44L17.1 11.7 14.29 14.5l2.45 2.47 2.88-1.64c.82-.47.82-1.64 0-2.11zM3.03.28C2.67.47 2.44.85 2.44 1.33v21.34c0 .48.23.86.59 1.05l.07.04 11.94-11.97v-.28L3.1.24l-.07.04zm10.02 13.47L3.03 3.78v-.01l10.02 10.0-.01-.02z"/></svg>
+            Google Play
+          </a>
+        </div>
+        <p class="coming-soon-note" id="coming-soon">🚀 Coming soon to App Store &amp; Google Play — stay tuned!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <span class="logo-icon">🛒</span>
+            <span>GrocaAIChef</span>
+          </a>
+          <p>Smart shopping and meal planning for everyone.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>App</h4>
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#download">Download</a>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="#support">Support</a>
+            <a href="policy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="mailto:admin@grocaaichef.com">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 GrocaAIChef. All rights reserved.</p>
+        <div style="display:flex; gap: 16px;">
+          <a href="policy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
